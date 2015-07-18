@@ -13,7 +13,7 @@ public class Command:MonoBehaviour
 	
 	private ActionParameter 	m_actionParameter 	= 	null;
 	public ActionParameter  	actionParamter 			{get { return m_actionParameter;} set { m_actionParameter = value;}}
-	
+	public bool					isFinished			=	false;
 	#endregion
 	
 	#region Constructor & Destructor

@@ -4,9 +4,13 @@ using System.Collections.Generic;
 
 public class TriggerHandler : MonoBehaviour {
 
-	public List<Command> commands;
+	#region Data Memeber
+	public List<string> commandNames;
+	private List<Command> commands;
 	private bool isTrigger;
+	#endregion
 
+	#region Mono Function
 	private void Start () {
 		isTrigger = false;
 	}
@@ -28,10 +32,12 @@ public class TriggerHandler : MonoBehaviour {
 		actionParameter.actionParameterData.source = this.gameObject;
 		actionParameter.actionParameterData.target = other.gameObject;
 
-		foreach( Command command in commands){
-			command.actionParamter = actionParameter;
+		foreach( string commandName in commandNames){
+			Command command = CommandFactory.Instance.CreateCommand( commandName, actionParameter);
+			commands.Add(command);
 		}
 
 		isTrigger = true;
 	}
+	#endregion
 }

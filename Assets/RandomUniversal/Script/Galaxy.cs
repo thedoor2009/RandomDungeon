@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Galaxy : MonoBehaviour {
 
+	#region Data Memeber 
 	public GameObject Star;
 
 	private bool [,,]StarIsExisted;
@@ -10,7 +11,9 @@ public class Galaxy : MonoBehaviour {
 	private void Awake(){
 
 	}
+	#endregion
 
+	#region Mono Function
 	private void Start () {
 		Init();
 	}
@@ -18,7 +21,9 @@ public class Galaxy : MonoBehaviour {
 	private void Update () {
 
 	}
+	#endregion
 
+	#region Function
 	private void Init(){
 		InitStarArray();
 
@@ -86,4 +91,6 @@ public class Galaxy : MonoBehaviour {
 
 		return probability < 0;
 	}
+
+	#endregion
 }

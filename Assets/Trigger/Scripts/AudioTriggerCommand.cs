@@ -1,15 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AudioTriggerCommand : MonoBehaviour {
+public class AudioTriggerCommand : Command {
+	public AudioTriggerCommand(ActionParameter i_actionParamter):base(i_actionParamter){
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

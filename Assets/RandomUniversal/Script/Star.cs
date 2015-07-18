@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Star : MonoBehaviour {
 
+	#region Data Memeber
 	public Transform plane;
 
 	private int m_numOfPlanes;
@@ -12,7 +13,9 @@ public class Star : MonoBehaviour {
 			return m_numOfPlanes;
 		}
 	}
+	#endregion
 
+	#region Mono Function
 	private void Awake(){
 		Init();
 	}
@@ -24,7 +27,9 @@ public class Star : MonoBehaviour {
 	private void Update () {
 	
 	}
+	#endregion
 
+	#region Function
 	private void Init(){
 		SetNumberOfPlanes();
 		GeneratePlanes();
@@ -50,4 +55,5 @@ public class Star : MonoBehaviour {
 		Random.seed = (int)SeedProduce.Instance.Randomizer(x, y, x * z + x, 1000L);
 		this.m_numOfPlanes = (int)(Random.value * 20.0f);
 	}
+	#endregion
 }

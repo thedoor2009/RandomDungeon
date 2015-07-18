@@ -3,11 +3,14 @@ using System.Collections;
 
 public class Plane : MonoBehaviour {
 
+	#region Data Memeber
 	public Transform Center;
 
 	private float m_degreePerSecond;
 	private Vector3 m_distance;
+	#endregion
 
+	#region Mono Function
 	private void Start () {
 		long x = (long)this.transform.position.x;
 		long y = (long)this.transform.position.y;
@@ -26,4 +29,5 @@ public class Plane : MonoBehaviour {
 		m_distance = Quaternion.AngleAxis( m_degreePerSecond * Time.deltaTime, Vector3.up ) * m_distance;
 		transform.position = Center.position + m_distance;
 	}
+	#endregion
 }

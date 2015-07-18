@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Setting:MonoBehaviour {
 
+	#region Data Member
 	private static Setting m_instance;
 	
 	private long  		m_maxXBorder = 5;
@@ -41,7 +42,9 @@ public class Setting:MonoBehaviour {
 	public int MAXIMUM_PROBABILITY{
 		get{ return m_maxProbability;}
 	}
+	#endregion
 
+	#region Function
 	private void Init(){
 		if( m_instance == null ){
 			m_instance = this;
@@ -56,7 +59,9 @@ public class Setting:MonoBehaviour {
 		m_maxZBorder 			= 		5;
 		m_rootRand 				= 		-749280;
 	}
+	#endregion
 
+	#region Mono Function
 	private void Awake(){
 		Init();
 	}
@@ -68,4 +73,5 @@ public class Setting:MonoBehaviour {
 	private void Update(){
 	
 	}
+	#endregion
 }

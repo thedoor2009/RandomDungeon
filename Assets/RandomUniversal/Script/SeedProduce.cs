@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SeedProduce:MonoBehaviour{
 
+	#region Data Memeber
 	private static SeedProduce m_instance;
 
 	private long 		ulGen1;
@@ -19,11 +20,15 @@ public class SeedProduce:MonoBehaviour{
 			return m_instance;
 		}
 	}
+	#endregion
 
+	#region	Function
 	private void Awake(){
 		Init();
 	}
+	#endregion
 
+	#region Function
 	public long Randomizer(long Gen1, long Gen2, long Seed, long Max){
 
 		this.ulGen1 = Gen1;
@@ -50,4 +55,5 @@ public class SeedProduce:MonoBehaviour{
 			Destroy(this.gameObject);
 		}
 	}
+	#endregion
 }	
