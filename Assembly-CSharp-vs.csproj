@@ -46,14 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RandomUniversal\Script\Galaxy.cs" />
+     <Compile Include="Assets\RandomUniversal\Script\Plane.cs" />
+     <Compile Include="Assets\RandomUniversal\Script\SeedProduce.cs" />
+     <Compile Include="Assets\RandomUniversal\Script\Setting.cs" />
+     <Compile Include="Assets\RandomUniversal\Script\Star.cs" />
      <Compile Include="Assets\Shared\Scripts\ActionParameter.cs" />
      <Compile Include="Assets\Shared\Scripts\Command.cs" />
      <Compile Include="Assets\Trigger\Scripts\AudioTriggerCommand.cs" />
-     <Compile Include="Assets\Universal_Random_1\Script\Galaxy.cs" />
-     <Compile Include="Assets\Universal_Random_1\Script\Plane.cs" />
-     <Compile Include="Assets\Universal_Random_1\Script\SeedProduce.cs" />
-     <Compile Include="Assets\Universal_Random_1\Script\Setting.cs" />
-     <Compile Include="Assets\Universal_Random_1\Script\Star.cs" />
+     <Compile Include="Assets\Trigger\Scripts\TriggerHandler.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

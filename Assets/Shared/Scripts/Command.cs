@@ -7,13 +7,12 @@
 using UnityEngine;
 using System.Collections;
 
-public class Command 
+public class Command:MonoBehaviour
 {
 	#region Data Member
 	
-	private ActionParameter 	m_actionParameter;
-	
-	public ActionParameter  	actionParamter {get { return m_actionParameter;} set { m_actionParameter = value;}}
+	private ActionParameter 	m_actionParameter 	= 	null;
+	public ActionParameter  	actionParamter 			{get { return m_actionParameter;} set { m_actionParameter = value;}}
 	
 	#endregion
 	
