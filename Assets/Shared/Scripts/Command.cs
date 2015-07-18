@@ -10,24 +10,36 @@ using System.Collections;
 public class Command 
 {
 	#region Data Member
-
-	public Command(){
-		init ();
+	
+	private ActionParameter 	m_actionParameter;
+	
+	public ActionParameter  	actionParamter {get { return m_actionParameter;} set { m_actionParameter = value;}}
+	
+	#endregion
+	
+	#region Constructor & Destructor
+	
+	public Command(ActionParameter i_actionParamter){
+		init (i_actionParamter);
 	}
-
+	
 	~Command(){
 		uninit ();
 	}
-
+	
 	#endregion
-
+	
 	#region Public Function
-
+	
 	public virtual void excute(){}
-
-	public virtual void init(){}
-
-	public virtual void uninit(){}
-
+	
+	public virtual void init(ActionParameter i_actionParamter){
+		actionParamter = i_actionParamter;
+	}
+	
+	public virtual void uninit(){
+		actionParamter.uninit();
+	}
+	
 	#endregion
 }
