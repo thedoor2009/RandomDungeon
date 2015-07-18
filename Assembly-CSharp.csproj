@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Shared\Scripts\ActionParameter.cs" />
      <Compile Include="Assets\Shared\Scripts\Command.cs" />
-     <Compile Include="Assets\Shared\Scripts\TriggerCommand.cs" />
      <Compile Include="Assets\Universal_Random_1\Script\Galaxy.cs" />
      <Compile Include="Assets\Universal_Random_1\Script\Plane.cs" />
      <Compile Include="Assets\Universal_Random_1\Script\SeedProduce.cs" />
