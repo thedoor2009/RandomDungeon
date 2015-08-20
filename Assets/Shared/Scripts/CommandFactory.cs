@@ -38,10 +38,12 @@ public class CommandFactory : MonoBehaviour {
 		switch( i_commandName ){
 		case "AudioTriggerCommand":
 		{
+			//return  i_actionParameter.actionParameterData.source.AddComponent<AudioTriggerCommand>();
 			return new AudioTriggerCommand( i_actionParameter);
 			break;
 		}
 		default:
+			Debug.LogError("There is no such command. Please check your request.");
 			return null;
 			break;
 		}

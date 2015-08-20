@@ -54,6 +54,7 @@
      <Compile Include="Assets\Shared\Scripts\ActionParameter.cs" />
      <Compile Include="Assets\Shared\Scripts\Command.cs" />
      <Compile Include="Assets\Shared\Scripts\CommandFactory.cs" />
+     <Compile Include="Assets\Shared\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Trigger\Scripts\AudioTriggerCommand.cs" />
      <Compile Include="Assets\Trigger\Scripts\TriggerHandler.cs" />
  <Reference Include="UnityEngine.UI">

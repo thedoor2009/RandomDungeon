@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ActionParameter:MonoBehaviour
+public class ActionParameter
 {
 	public struct Data
 	{	
